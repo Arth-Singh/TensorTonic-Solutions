@@ -1,12 +1,12 @@
-import numpy as np 
+import numpy as np  
 
 def mean_squared_error(y_pred, y_true):
 
-  y_pred = np.array(y_pred, dtype = np.float64)
-  y_true = np.array(y_true, dtype = np.float64)
+    y_pred = np.array(y_pred, dtype = np.float64)
+    y_true = np.array(y_true, dtype = np.float64)
 
-  if y_pred.shape != y_true.shape:
-    return None
+    if y_pred.shape != y_true.shape:
+        return None
 
 
-  return float(np.mean((y_pred - y_true)**2))
+    return float(np.mean((y_pred - y_true) ** 2))
